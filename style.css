@@ -1,0 +1,43 @@
+
+    /*產生框線，實心*/
+    /* border: solid 1px rgb(255, 0, 0); */
+
+html,body{
+    background-color: chocolate;
+    /* 設定視窗高度及寬度為100% */
+    height: 100%;
+    width: 100%;
+}
+.box{
+    background-color: mintcream;
+    width: 380px;
+    margin: 0 auto;
+    /* 把.box置於視窗上下左右的中間 */
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    
+}
+.top{
+    /* 連結一個圖片做背景，並顯示整張圖片 */
+    background-image: url(https://pic.pimg.tw/sidney6811/1529508979-1559019819_n.jpg);
+    background-size: cover;
+    /* 設定高度 */
+    height: 330px;
+}
+.bottom{
+   /* 平均分布*/
+    display: flex;
+    justify-content: space-around;  
+    /* 側邊保留空白 */
+    padding: 0 20px;
+}
+/* h1文字白色 */
+.top h1{
+    color: white;
+    position: absolute;
+    top: 230px;
+    left: 20px;
+}
+
